@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("webapime")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2fc1272a02c88b017ddabec8db64d87f64144aa1")]
 [assembly: System.Reflection.AssemblyProductAttribute("webapime")]
 [assembly: System.Reflection.AssemblyTitleAttribute("webapime")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

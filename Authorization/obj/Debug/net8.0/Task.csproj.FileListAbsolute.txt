@@ -160,3 +160,4 @@ C:\Users\daniel.jerald\Desktop\review task\Authorization\obj\Debug\net8.0\refint
 C:\Users\daniel.jerald\Desktop\review task\Authorization\obj\Debug\net8.0\Task.pdb
 C:\Users\daniel.jerald\Desktop\review task\Authorization\obj\Debug\net8.0\Task.genruntimeconfig.cache
 C:\Users\daniel.jerald\Desktop\review task\Authorization\obj\Debug\net8.0\ref\Task.dll
+C:\Users\daniel.jerald\Desktop\review task\Authorization\obj\Debug\net8.0\Task.sourcelink.json

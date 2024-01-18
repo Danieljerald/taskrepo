@@ -736,19 +736,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nithish.saravanan\\.nuget\\packages\\": {}
+    "C:\\Users\\daniel.jerald\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nithish.saravanan\\Desktop\\JWT Authentication\\webapime\\webapime.csproj",
+      "projectUniqueName": "C:\\Users\\daniel.jerald\\Desktop\\review task\\JWT Authentication\\webapime\\webapime.csproj",
       "projectName": "webapime",
-      "projectPath": "C:\\Users\\nithish.saravanan\\Desktop\\JWT Authentication\\webapime\\webapime.csproj",
-      "packagesPath": "C:\\Users\\nithish.saravanan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nithish.saravanan\\Desktop\\JWT Authentication\\webapime\\obj\\",
+      "projectPath": "C:\\Users\\daniel.jerald\\Desktop\\review task\\JWT Authentication\\webapime\\webapime.csproj",
+      "packagesPath": "C:\\Users\\daniel.jerald\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\daniel.jerald\\Desktop\\review task\\JWT Authentication\\webapime\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nithish.saravanan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\daniel.jerald\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"

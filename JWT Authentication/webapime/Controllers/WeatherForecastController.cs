@@ -21,7 +21,7 @@ public class WeatherForecastController : ControllerBase
     {
         if(user.Username == "admin" && user.Password =="12345")
         {
-           User _user = new User { Username = "Nithish Kumar"};
+           User _user = new User { Username = "Daniel Samson"};
            return _user;
         }
         return null;
