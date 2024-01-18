@@ -1,0 +1,83 @@
+<h2 style="margin-left: 45%;margin-top: 2%;font-size: larger;">Employee Details</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>EMPID</th>
+            <th>EMP NAME</th>
+            <th>DESIGNATION</th>
+            <th>ADDRESS</th>
+            @if(hideToggle === false){
+                <th>SALARY</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let detail of dataArray">
+            <td>{{detail.property1}}</td>
+            <td>{{detail.property2}}</td>
+            <td>{{detail.property3}}</td>
+            <td>{{detail.property4}}</td>
+            <td *ngIf="!hideToggle">{{detail.property5}}</td>
+            
+        </tr>
+    </tbody>
+    <br><br>
+    <button (click)="onButtonClick()">
+        @if(hideToggle == false){
+            Hide
+        }
+        @else{
+            Show
+        }
+    </button>
+</table>
+
+<br>
+
+<hr>
+<br><br>
+<form class="max-w-md mx-auto" #empdata="ngForm" (submit)="addData(empdata.value)">
+    <Fieldset><legend>Employee Details</legend><br>
+    <div class="relative z-0 w-full mb-5 group">
+        <input type="number" name="empId" id="empno" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " ngModel required />
+        <label for="empno" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Employee ID</label>
+    </div>
+    <div class="relative z-0 w-full mb-5 group">
+        <input type="text" name="empname" id="empname" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " ngModel required />
+        <label for="empname" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Employee Name</label>
+    </div>
+    <div class="relative z-0 w-full mb-5 group">
+        <input type="text" name="designation" id="empdesgination" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " ngModel required />
+        <label for="empdesgination" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">designation</label>
+    </div>
+    <div class="relative z-0 w-full mb-5 group">
+        <input type="text" name="address" id="address" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " ngModel required />
+        <label for="address" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Address</label>
+    </div>
+    <div class="relative z-0 w-full mb-5 group">
+        <input type="Number" name="salary" id="salary" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " ngModel required />
+        <label for="salary" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Salary</label>
+    </div>
+</Fieldset>
+    <button type="submit">Submit</button>
+    </form>
+
+<style>
+    input{
+        color: black;
+    }
+    .table{
+        margin-left: 37%;
+        margin-top: 3%;
+    }
+    button{
+        border: 2px solid black; 
+        width: 100%;
+        color: white;
+        background-color: black;
+    }
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+</style>

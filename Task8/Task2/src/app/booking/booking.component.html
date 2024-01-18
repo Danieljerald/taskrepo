@@ -1,0 +1,24 @@
+
+<div class="content">
+    <div class="left-content">
+            <button>Flight Booking</button>
+            <button>Bus Booking</button>
+            <button>Car Booking</button>
+            <button (click)="showForm()" [routerLink]="['hotelbooking']">Hotel Booking</button>
+    </div>
+    <div>
+    <div *ngIf="show">
+        <app-hotelbooking></app-hotelbooking>
+    </div>
+    <div class="right-content text-center">
+        <h3>Where?</h3>
+        <h6>You can reach us travel any location</h6>
+        <br>
+        <h3>when?</h3>
+        <h6>You can reach us for your plan trip</h6>
+        <br><h3>transport?</h3>
+        <h6>You can reach us for Flight, Bus, Car to travel</h6>
+        <br>        
+    </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,29 @@
+.content{
+    margin-left: 1rem;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+.content .left-content{
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.content .left-content button{
+    height: 3rem;
+    background-color: black;
+    color: white;
+    margin-left: 1.5rem;
+}
+
+.content .right-content{
+    background-color: rgb(0, 0, 0);
+}
+
+.content .right-content h3,h6{
+    color: white;
+    margin-left: 1rem;
+}

@@ -1,0 +1,37 @@
+<form (ngSubmit)="onSubmit(myForms)" #myForms="ngForm">
+  <div>
+    <h3>Hotel Reservation Form</h3>
+  </div>
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Select Room/Suite type</label>
+        <select class="form-control" id="exampleFormControlSelect1" name="roomType" ngModel>
+          <option disabled>Select Room/Suite</option>
+          <option>Room</option>
+          <option>Suite</option>
+        </select>
+      </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Number of room/suite</label>
+      <input type="number" class="form-control" name="numberRooms" ngModel>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Number of persons</label>
+        <input type="number" class="form-control" name="numberPersons" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Number of Children</label>
+        <input type="number" class="form-control" name="numberChildren" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Restaurant Facilities</label>
+        <select class="form-control" name="restrauntFacility" ngModel>
+          <option disabled>Do you want Restaurant Facilities</option>
+          <option>Yes</option>
+          <option>No</option>
+        </select>
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+      <p>Total Fare:{{cost}}</p>
+  </form>
+
