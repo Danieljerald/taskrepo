@@ -1,0 +1,16 @@
+@model Signin
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<form method="post">
+<div class="text-center"><h1>Register</h1></div>
+ @Html.EditorForModel()
+ <div> <button type="submit">submit</button></div> 
+</form>
+ @section Scripts
+                    {
+                    @{
+                        <Partial name="_ValidationScriptsPartial" />
+                    }
+                }

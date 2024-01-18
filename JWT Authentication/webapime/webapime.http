@@ -1,0 +1,6 @@
+@webapime_HostAddress = http://localhost:5038
+
+GET {{webapime_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

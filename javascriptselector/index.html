@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<div id="div">
+    <h1>getting element by ID</h1>
+</div>
+<div class="myclass">
+    <h1>getting element by class</h1>
+</div>
+<div>
+    <h3>getting element by tagName</h3>
+</div>
+<input type="text" value="getElementsByName" name="inp">
+
+</body>
+</html>
+<script>
+var element = document.getElementById("div");
+element.style.backgroundColor = "blue";
+
+var elements = document.getElementsByClassName("myclass");
+var firstElement = elements[0];
+firstElement.style.backgroundColor = "green";
+
+var tagname = document.getElementsByTagName("h3");
+var firsttagname = tagname[0];
+firsttagname.style.backgroundColor = "yellow";
+
+var input = document.getElementsByName("inp");
+var first = input[0];
+first.style.width = "30%";
+first.style.height = "50px";
+
+</script>

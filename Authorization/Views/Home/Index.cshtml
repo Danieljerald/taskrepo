@@ -1,0 +1,19 @@
+﻿@model Register
+@inject IDatabase _database 
+@{
+    ViewData["Title"] = "Home Page";
+}
+<div>
+  <h1>Number of Registers = @_database.GetRegister().Count()</h1>
+</div>
+<form method="post">
+<div class="text-center"><h1>Register</h1></div>
+ @Html.EditorForModel()
+ <div> <button type="submit">submit</button></div> 
+</form>
+ @section Scripts
+                    {
+                    @{
+                        <Partial name="_ValidationScriptsPartial" />
+                    }
+                }
