@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\subramani.palani\\Desktop\\Subramani_tasks\\net task\\EFinheritance\\EFinheritance.csproj": {}
+    "C:\\Users\\daniel.jerald\\Desktop\\review task\\EFinheritance\\EFinheritance.csproj": {}
   },
   "projects": {
-    "C:\\Users\\subramani.palani\\Desktop\\Subramani_tasks\\net task\\EFinheritance\\EFinheritance.csproj": {
+    "C:\\Users\\daniel.jerald\\Desktop\\review task\\EFinheritance\\EFinheritance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\subramani.palani\\Desktop\\Subramani_tasks\\net task\\EFinheritance\\EFinheritance.csproj",
+        "projectUniqueName": "C:\\Users\\daniel.jerald\\Desktop\\review task\\EFinheritance\\EFinheritance.csproj",
         "projectName": "EFinheritance",
-        "projectPath": "C:\\Users\\subramani.palani\\Desktop\\Subramani_tasks\\net task\\EFinheritance\\EFinheritance.csproj",
-        "packagesPath": "C:\\Users\\subramani.palani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\subramani.palani\\Desktop\\Subramani_tasks\\net task\\EFinheritance\\obj\\",
+        "projectPath": "C:\\Users\\daniel.jerald\\Desktop\\review task\\EFinheritance\\EFinheritance.csproj",
+        "packagesPath": "C:\\Users\\daniel.jerald\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\daniel.jerald\\Desktop\\review task\\EFinheritance\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\subramani.palani\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\daniel.jerald\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -38,6 +38,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -56,7 +60,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.5.0, )"
             }
           },
           "imports": [

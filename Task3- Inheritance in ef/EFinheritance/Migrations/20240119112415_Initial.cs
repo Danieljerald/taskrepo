@@ -5,13 +5,13 @@
 namespace EFinheritance.Migrations
 {
     /// <inheritdoc />
-    public partial class Initials : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "UserRecord",
+                name: "Userdata",
                 columns: table => new
                 {
                     EmployeeID = table.Column<string>(type: "nvarchar(450)", nullable: false),
@@ -22,7 +22,7 @@ namespace EFinheritance.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_UserRecord", x => x.EmployeeID);
+                    table.PrimaryKey("PK_Userdata", x => x.EmployeeID);
                 });
         }
 
@@ -30,7 +30,7 @@ namespace EFinheritance.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "UserRecord");
+                name: "Userdata");
         }
     }
 }

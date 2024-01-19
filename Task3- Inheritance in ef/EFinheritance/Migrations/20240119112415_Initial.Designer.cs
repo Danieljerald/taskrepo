@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EFinheritance.Migrations
 {
     [DbContext(typeof(WebDbContext))]
-    [Migration("20240117191520_table-name-changed")]
-    partial class tablenamechanged
+    [Migration("20240119112415_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
